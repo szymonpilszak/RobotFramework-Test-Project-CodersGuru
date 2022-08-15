@@ -3,4 +3,4 @@
   - Test cases exported from TestLink
   - Bug reports exported from Jira
   - Automated tests using RobotFramework in Pycharm
-  - Test raports
+  - Test reports
