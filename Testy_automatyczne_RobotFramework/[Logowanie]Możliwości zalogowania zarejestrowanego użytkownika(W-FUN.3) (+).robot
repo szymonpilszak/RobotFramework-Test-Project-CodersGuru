@@ -20,28 +20,31 @@ Sprawdzenie mozliwosci zalogowania zarejestrowanego uzytkownika
     Podanie Loginu
     Podanie Hasła
     Kliknij Zaloguj
+    Sprawdzenie Czy Uzytkownik Został Zalogowany
     [Teardown]      Close Browser
 
 
 
 *** Keywords ***
 Przygotowanie Srodowiska
-    Set Selenium Speed          1
+    Set Selenium Speed              0.5
 Otwarcie Przegladarki
-    Open Browser                https://tester.codersguru.pl/     chrome
+    Open Browser                    https://tester.codersguru.pl/     chrome
     Maximize Browser Window
 Przejscie Na Strone Logowania
-    Click Element               ${OTWARCIE_PODSTRONY}
+    Click Element                   ${OTWARCIE_PODSTRONY}
 Oczekiwanie Na Zaladowanie Podstrony Logowania
-    Wait Until Location Is      https://tester.codersguru.pl/login
+    Wait Until Location Is          https://tester.codersguru.pl/login
 Podanie Loginu
-    Input Text                  ${POLE_LOGINU}     aaaaa@wp.pl
+    Input Text                      ${POLE_LOGINU}     aaaaa@wp.pl
 Podanie Hasła
-    Input Text                  ${POLE_HASŁA}     aaaaa
+    Input Text                      ${POLE_HASŁA}     aaaaa
 Kliknij Zaloguj
-    Click Button                ${PRZYCISK_ZALOGUJ}
-Oczekiwanie Na Zalogowanie
-    Wait Until Location Is      https://tester.codersguru.pl
+    Click Button                    ${PRZYCISK_ZALOGUJ}
+Sprawdzenie Czy Uzytkownik Został Zalogowany
+    Wait Until Page Contains Element     //img[@class='settings-image']      timeout=10s
+
+
 
 
 
