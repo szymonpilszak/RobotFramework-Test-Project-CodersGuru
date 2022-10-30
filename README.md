@@ -1,6 +1,6 @@
-- My first testing project of CodersGuru website  ( https://tester.codersguru.pl/ ). Project will contain :
-  - Test plan
-  - Test cases 
-  - Bug reports exported from Jira
-  - Automated tests using RobotFramework
-  - Test reports
+- Mój pierwszy projekt testowy aplikacji webowej  https://tester.codersguru.pl/  . Projekt ten będzie zawierał :
+
+  - Plan testów
+  - Przypadki testowe
+  - Raporty odnalezionych błędów
+  - Raporty przeprowadzonych testów
