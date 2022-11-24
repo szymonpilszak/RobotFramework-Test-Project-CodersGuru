@@ -1,6 +1,6 @@
 - Mój pierwszy projekt testowy aplikacji webowej  https://tester.codersguru.pl/  . Projekt ten będzie zawierał :
 
-  - Plan testów
   - Przypadki testowe
+  - Raporty z przeprowadzonych testów
   - Raporty odnalezionych błędów
-  - Raporty przeprowadzonych testów
+  - Proste przypadki automatyzacji testów
