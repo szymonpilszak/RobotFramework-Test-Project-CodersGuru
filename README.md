@@ -1,8 +1,7 @@
 <h1 align="center">RobotFramework TEST Project</h1>
 
-***Current Test Report***
+***Current Test Report*** :https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html
 
-https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html
 
 ***PROJECT OVERVIEW***
 
