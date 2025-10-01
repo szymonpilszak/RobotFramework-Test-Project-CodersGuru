@@ -1,6 +1,7 @@
 <h1 align="center">RobotFramework TEST Project</h1>
 
 **Click below to view the current Robot Framework test report:**
+
 [Current Test Report](https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html)
 
 
