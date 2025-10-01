@@ -1,60 +1,38 @@
-\# CODERSGURU TEST PROJECT
+<h1 align="center">RobotFramework TEST Project</h1>
 
 
+***PROJECT OVERVIEW***
 
-This repository contains my \*\*\*first testing project\*\*\* for the web application \[CodersGuru](https://tester.codersguru.pl/).  
+This repository contains my first testing project for the web application [CodersGuru](https://tester.codersguru.pl/).  
+It demonstrates my skills in manual testing, automated testing, and reporting using **Robot Framework**.
 
-It demonstrates my skills in \*\*\*manual testing\*\*\* and \*\*\*test automation\*\*\* using \*\*\*Robot Framework\*\*\*.
-
-
-
----
-
-
-
-\## PROJECT SCOPE
-
-This project includes:  
-
-\- \*\*Test Cases\*\* – documented functional testing scenarios  
-
-\- \*\*Test Execution Reports\*\* – results of manual and automated tests  
-
-\- \*\*Bug Reports\*\* – identified issues with clear reproduction steps and severity levels  
-
-\- \*\*Basic Automation\*\* – simple automated test cases implemented in \*\*\*Robot Framework\*\*\*  
+***Key Features***
+- Manual **test cases** covering functional scenarios of the web application
+- **Automated test cases** implemented in Robot Framework
+- **Test execution reports** for both manual and automated tests
+- **Bug reports** with clear reproduction steps and severity levels
+- Basic automation using **SeleniumLibrary** and Python
 
 
+***Tools & Technologies***
+- **Robot Framework** – automation framework
+- **SeleniumLibrary** – browser automation
+- **Python 3** – scripting support
+- **Jira** *(optional)* – for reporting and ticket visualization
 
----
+***Requirements***
+- **Python 3.x** — [Download Python](https://www.python.org/downloads/)
+- **Robot Framework** — pip install robotframework
+- **SeleniumLibrary** — pip install robotframework-seleniumlibrary
+- **Web browser** (Chrome/Firefox)
 
-
-
-\## TOOLS \& TECHNOLOGIES
-
-\- \*\*Robot Framework\*\* – automation framework  
-
-\- \*\*SeleniumLibrary\*\* – browser automation  
-
-\- \*\*Python\*\* – scripting support  
-
-\- \*\*Allure Reports\*\* \*(optional)\* – for advanced test reporting and visualization  
-
-
-
----
-
-
-
-\## PURPOSE
-
-The goal of this project is to showcase my ability to:  
-
-\- Design and execute \*\*manual test cases\*\*  
-
-\- Write \*\*clear and structured bug reports\*\*  
-
-\- Automate functional test scenarios using \*\*industry-standard tools\*\*
-
-
+***Getting Started***
+1. Clone the repository:  
+   `git clone https://github.com/szymonpilszak/CodersGuru_TestProject.git`
+2. Navigate to the project folder:  
+   `cd CodersGuru_TestProject`
+3. Install dependencies:  
+   `pip install robotframework robotframework-seleniumlibrary`
+4. Run all tests:  
+   `robot tests/`  
 
