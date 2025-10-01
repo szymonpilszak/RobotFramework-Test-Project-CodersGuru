@@ -38,7 +38,7 @@ This project includes:
 
 \- \*\*Python\*\* – scripting support  
 
-\- \*\*Jira Reports\*\* – for test reporting and visualization  
+\- \*\*Allure Reports\*\* \*(optional)\* – for advanced test reporting and visualization  
 
 
 
@@ -54,7 +54,7 @@ The goal of this project is to showcase my ability to:
 
 \- Write \*\*clear and structured bug reports\*\*  
 
-\- Automate functional test scenarios using \*\*industry-standard tools\*\*  
+\- Automate functional test scenarios using \*\*industry-standard tools\*\*
 
 
 
