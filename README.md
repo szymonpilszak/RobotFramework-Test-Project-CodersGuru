@@ -1,8 +1,9 @@
 <h1 align="center">RobotFramework TEST Project</h1>
 
-**Click below to view the current Robot Framework test report:**
 
-[Current Test Report](https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html)
+***TEST REPORTS AND LOGS***
+
+https://szymonpilszak.github.io/RobotFramework-Test-Project-CodersGuru/Test_reports/report.html
 <br>
 <br>
 <br>
@@ -39,10 +40,10 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
    `pip install robotframework-seleniumlibrary`
 
 2. Clone the repository:  
-   `git clone https://github.com/szymonpilszak/RobotFramework-Test-Project.git`
+   `git clone https://github.com/szymonpilszak/RobotFramework-Test-Project-CodersGuru.git`
    
 3. Navigate to the project folder with tests:  
-   `cd RobotFramework-Test-Project`
+   `cd RobotFramework-Test-Project-CodersGuru/RobotFramework_Tests`
    
 5. Run all tests:  
    `robot .`  
