@@ -1,6 +1,7 @@
 <h1 align="center">RobotFramework TEST Project</h1>
 
-***Current Test Report*** :https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html
+[Current Test Report](https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html)
+
 
 
 ***PROJECT OVERVIEW***
@@ -27,6 +28,7 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
 - **Robot Framework** — pip install robotframework
 - **SeleniumLibrary** — pip install robotframework-seleniumlibrary
 - **Web browser** (Chrome/Firefox)
+- **ChromeDriver** ([Download ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable) 
 
 ***Getting Started***
 1. Clone the repository:  
@@ -35,6 +37,8 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
    `cd CodersGuru_TestProject`
 3. Install dependencies:  
    `pip install robotframework robotframework-seleniumlibrary`
-4. Run all tests:  
+   `pip install robotframework-seleniumlibrary`
+   
+5. Run all tests:  
    `robot tests/`  
 
