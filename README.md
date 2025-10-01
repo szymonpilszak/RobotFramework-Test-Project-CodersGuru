@@ -3,7 +3,7 @@
 
 ***TEST REPORTS AND LOGS***
 
-https://szymonpilszak.github.io/RobotFramework-Test-Project/Test_reports/report.html
+https://szymonpilszak.github.io/RobotFramework-Test-Project-CodersGuru/Test_reports/report.html
 <br>
 <br>
 <br>
