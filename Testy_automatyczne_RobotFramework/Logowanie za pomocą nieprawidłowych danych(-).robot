@@ -1,61 +1,62 @@
 *** Settings ***
-Documentation   Automatyczny test możliwości zalogowania niepoprawnymi danymi
+Documentation   Automated test for login functionality with invalid credentials
 Library         SeleniumLibrary
-Suite Setup     Przygotowanie Srodowiska
-
+Suite Setup     Prepare Environment
 
 *** Variables ***
-${OTWARCIE_PODSTRONY}    //button[@class='header__button']
-${POLE_LOGINU}          //input[@id='username']
-${POLE_HASŁA}           //input[@id='password']
-${PRZYCISK_ZALOGUJ}     //button[@id='_submit']
-${URL}                  https://tester.codersguru.pl/
-${BROWSER}              chrome
-
+${LOGIN_BUTTON_HEADER}      //button[@class='header__button']
+${EMAIL_FIELD}              //input[@id='username']
+${PASSWORD_FIELD}           //input[@id='password']
+${LOGIN_BUTTON}             //button[@id='_submit']
+${BASE_URL}                 https://tester.codersguru.pl/
+${BROWSER}                  chrome
 
 *** Test Cases ***
-Sprawdzenie mozliwosci zalogowania użytkownika za pomocą niepoprawnych danych
-    [Setup]     Otwarcie Przegladarki
-    Przejscie Na Strone Logowania
-    Oczekiwanie Na Zaladowanie Podstrony Logowania
-    Podanie Poprawnego Email i Niepoprawnego Hasła
-    Podanie Niepoprawnego Email i Poprawnego Hasła
-    Poprawny Email i Puste Hasło
-    Pusty Email i Poprawne Hasło
+Verify Login With Invalid Credentials
+    [Setup]     Open Browser Session
+    Navigate To Login Page
+    Wait For Login Page To Load
+    Valid Email And Invalid Password
+    Invalid Email And Valid Password
+    Valid Email And Empty Password
+    Empty Email And Valid Password
     [Teardown]      Close Browser
 
-
 *** Keywords ***
-Przygotowanie Srodowiska
-    Set Selenium Speed              0.5
-Otwarcie Przegladarki
-    Open Browser                    ${URL}           ${BROWSER}
+Prepare Environment
+    Set Selenium Speed      0.5
+
+Open Browser Session
+    Open Browser        ${BASE_URL}     ${BROWSER}
     Maximize Browser Window
-Przejscie Na Strone Logowania
-    Click Element                   ${OTWARCIE_PODSTRONY}
-Oczekiwanie Na Zaladowanie Podstrony Logowania
-    Wait Until Location Is          https://tester.codersguru.pl/login
-Podanie Poprawnego Email i Niepoprawnego Hasła
-    Input Text                      ${POLE_LOGINU}                          aaaaa@wp.pl
-    Input Text                      ${POLE_HASŁA}                           bbbbb
-    Click Button                    ${PRZYCISK_ZALOGUJ}
-    Wait Until Page Contains        Nieprawidłowe dane.                     timeout=10s
-Podanie Niepoprawnego Email i Poprawnego Hasła
-    Input Text                      ${POLE_LOGINU}                          bbbbb@wp.pl
-    Input Text                      ${POLE_HASŁA}                           aaaaa
-    Click Button                    ${PRZYCISK_ZALOGUJ}
-    Wait Until Page Contains        Nieprawidłowe dane.                     timeout=10s
-Poprawny Email i Puste Hasło
-    Input Text                      ${POLE_LOGINU}                          aaaaa@wp.pl
-    Click Button                    ${PRZYCISK_ZALOGUJ}
-    Click Button                    ${PRZYCISK_ZALOGUJ}
-    Wait Until Page Contains        To pole jest wymagane                     timeout=10s
-Pusty Email i Poprawne Hasło
-    Clear Element Text              ${POLE_LOGINU}
-    Input Text                      ${POLE_HASŁA}                           aaaaa
-    Click Button                    ${PRZYCISK_ZALOGUJ}
-    Click Button                    ${PRZYCISK_ZALOGUJ}
-    Wait Until Page Contains        To pole jest wymagane                     timeout=10s
 
+Navigate To Login Page
+    Click Element      ${LOGIN_BUTTON_HEADER}
 
+Wait For Login Page To Load
+    Wait Until Location Is      https://tester.codersguru.pl/login
 
+Valid Email And Invalid Password
+    Input Text      ${EMAIL_FIELD}      aaaaa@wp.pl
+    Input Text      ${PASSWORD_FIELD}   bbbbb
+    Click Button    ${LOGIN_BUTTON}
+    Wait Until Page Contains      Nieprawidłowe dane.    timeout=10s
+
+Invalid Email And Valid Password
+    Input Text      ${EMAIL_FIELD}      bbbbb@wp.pl
+    Input Text      ${PASSWORD_FIELD}   aaaaa
+    Click Button    ${LOGIN_BUTTON}
+    Wait Until Page Contains      Nieprawidłowe dane.    timeout=10s
+
+Valid Email And Empty Password
+    Input Text      ${EMAIL_FIELD}      aaaaa@wp.pl
+    Click Button    ${LOGIN_BUTTON}
+    Click Button    ${LOGIN_BUTTON}
+    Wait Until Page Contains      To pole jest wymagane    timeout=10s
+
+Empty Email And Valid Password
+    Clear Element Text      ${EMAIL_FIELD}
+    Input Text              ${PASSWORD_FIELD}      aaaaa
+    Click Button            ${LOGIN_BUTTON}
+    Click Button            ${LOGIN_BUTTON}
+    Wait Until Page Contains      To pole jest wymagane    timeout=10s

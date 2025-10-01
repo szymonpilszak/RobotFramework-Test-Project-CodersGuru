@@ -1,36 +1,30 @@
 *** Settings ***
-
-Documentation   Automatyczny test cennika CodersGuru
+Documentation   Automated test for CodersGuru pricing page
 Library         SeleniumLibrary
-Suite Setup     Przygotowanie Srodowiska
+Suite Setup     Prepare Environment
 
 *** Variables ***
-
-${OTWARCIE_CENNIKA}       //*[@class='header__list-element' and contains(., 'Cennik')]
-${SPRAWDZENIE_CENY}       //*[@class='pricing__subheader pricing__subheader--green' and contains(., 'za godzinę brutto')]
-
+${PRICING_MENU}         //*[@class='header__list-element' and contains(., 'Cennik')]
+${CHECK_PRICE}          //*[@class='pricing__subheader pricing__subheader--green' and contains(., 'za godzinę brutto')]
 
 *** Test Cases ***
-
-Sprawdzenie podstrony z cena konsultacji
-    [Setup]     Otwarcie Przegladarki
-    Przejscie Na Strone Cennika
-    Sprawdzenie Czy Wyswietla Sie Cena Konsultacji
+Verify Consultation Pricing Page
+    [Setup]     Open Browser Session
+    Navigate To Pricing Page
+    Verify Consultation Price Displayed
     [Teardown]      Close Browser
 
-
-
 *** Keywords ***
-Przygotowanie Srodowiska
+Prepare Environment
     Set Selenium Speed      0.5
-    Set Screenshot directory        screenshots
+    Set Screenshot Directory        screenshots
 
-Otwarcie Przegladarki
+Open Browser Session
     Open Browser        https://tester.codersguru.pl/     chrome
     Maximize Browser Window
 
-Przejscie Na Strone Cennika
-    Click Element      ${OTWARCIE_CENNIKA}
+Navigate To Pricing Page
+    Click Element      ${PRICING_MENU}
 
-Sprawdzenie Czy Wyswietla Sie Cena Konsultacji
-    Element Text Should Be      ${SPRAWDZENIE_CENY}     100zł za godzinę brutto
+Verify Consultation Price Displayed
+    Element Text Should Be      ${CHECK_PRICE}     100zł za godzinę brutto

@@ -1,30 +1,28 @@
 *** Settings ***
-Documentation   Automatyczny test podstrony z regulaminem
+Documentation   Automated test for the Regulations page
 Library         SeleniumLibrary
-Suite Setup     Przygotowanie Srodowiska
-
+Suite Setup     Prepare Environment
 
 *** Variables ***
-${OTWARCIE_REGULAMINU}       //*[@class='link link--grey' and contains(., 'Regulamin')]
-
-
+${REGULATIONS_LINK}       //*[@class='link link--grey' and contains(., 'Regulamin')]
 
 *** Test Cases ***
-Sprawdzenie podstrony z cena konsultacji
-    [Setup]     Otwarcie Przegladarki
-    Przejscie Na Strone Regulaminu
-    Sprawdzenie Czy Regulamin Wyswietla Sie Poprawnie
+Verify Regulations Page
+    [Setup]     Open Browser Session
+    Navigate To Regulations Page
+    Verify Regulations Page Loaded
     [Teardown]      Close Browser
 
-
-
 *** Keywords ***
-Przygotowanie Srodowiska
+Prepare Environment
     Set Selenium Speed      0.5
-Otwarcie Przegladarki
+
+Open Browser Session
     Open Browser        https://tester.codersguru.pl/     chrome
     Maximize Browser Window
-Przejscie Na Strone Regulaminu
-    Click Element      ${OTWARCIE_REGULAMINU}
-Sprawdzenie Czy Regulamin Wyswietla Sie Poprawnie
+
+Navigate To Regulations Page
+    Click Element      ${REGULATIONS_LINK}
+
+Verify Regulations Page Loaded
     Wait Until Location Is      https://tester.codersguru.pl/regulations

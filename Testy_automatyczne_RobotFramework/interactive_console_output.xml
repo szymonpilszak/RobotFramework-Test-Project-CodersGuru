@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20251001 15:50:34.701" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\szymo\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Przejscie Na Strone Cennika">
+<msg timestamp="20251001 15:50:35.314" level="FAIL">No keyword with name 'Przejscie Na Strone Cennika' found.</msg>
+<status status="FAIL" starttime="20251001 15:50:35.314" endtime="20251001 15:50:35.314"/>
+</kw>
+<kw name="Sprawdzenie Czy Wyswietla Sie Cena Konsultacji">
+<status status="NOT RUN" starttime="20251001 15:50:35.316" endtime="20251001 15:50:35.316"/>
+</kw>
+<status status="PASS" starttime="20251001 15:50:34.725" endtime="20251001 15:50:37.193"/>
+</kw>
+<status status="PASS" starttime="20251001 15:50:34.724" endtime="20251001 15:50:37.193"/>
+</test>
+<status status="PASS" starttime="20251001 15:50:34.701" endtime="20251001 15:50:37.194"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
