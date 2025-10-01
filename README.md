@@ -45,5 +45,5 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
    `cd RobotFramework-Test-Project`
    
 5. Run all tests:  
-   `robot . /`  
+   `robot .`  
 
