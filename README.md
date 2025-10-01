@@ -39,10 +39,10 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
    `pip install robotframework-seleniumlibrary`
 
 2. Clone the repository:  
-   `git clone https://github.com/szymonpilszak/RobotFramework-Test-Project.git`
+   `git clone https://github.com/szymonpilszak/RobotFramework-Test-Project-CodersGuru.git`
    
 3. Navigate to the project folder with tests:  
-   `cd RobotFramework-Test-Project`
+   `cd RobotFramework-Test-Project-CodersGuru/RobotFramework_Tests`
    
 5. Run all tests:  
    `robot .`  
