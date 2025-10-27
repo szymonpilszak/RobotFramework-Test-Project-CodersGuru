@@ -36,7 +36,7 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
 
 ***Getting Started***
 1. Install dependencies:  
-   `pip install robotframework robotframework-seleniumlibrary`
+   `pip install robotframework`
    `pip install robotframework-seleniumlibrary`
 
 2. Clone the repository:  
