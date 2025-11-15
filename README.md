@@ -15,7 +15,6 @@ This repository contains my first testing project for the web application [Coder
 It demonstrates my skills in manual testing, automated testing, and reporting using **Robot Framework**.
 
 ***Key Features***
-- Manual **test cases** covering functional scenarios of the web application
 - **Automated test cases** implemented in Robot Framework
 - **Test execution reports** for both manual and automated tests
 - **Bug reports** with clear reproduction steps and severity levels
