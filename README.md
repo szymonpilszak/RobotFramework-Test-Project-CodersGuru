@@ -16,8 +16,7 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
 
 ***Key Features***
 - **Automated test cases** implemented in Robot Framework
-- **Test execution reports** for both manual and automated tests
-- **Bug reports** with clear reproduction steps and severity levels
+- **Test execution reports** for automated tests
 - Basic automation using **SeleniumLibrary**
 
 
