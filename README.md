@@ -18,7 +18,7 @@ It demonstrates my skills in manual testing, automated testing, and reporting us
 - **Automated test cases** implemented in Robot Framework
 - **Test execution reports** for both manual and automated tests
 - **Bug reports** with clear reproduction steps and severity levels
-- Basic automation using **SeleniumLibrary** and Python
+- Basic automation using **SeleniumLibrary**
 
 
 ***Tools & Technologies***
